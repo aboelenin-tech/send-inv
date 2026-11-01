@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/Send the invitation to friends.html"
+    }
+  ]
+}
