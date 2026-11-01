@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -32,7 +32,7 @@ textarea{resize:vertical}
 </head>
 <body>
 <div class="box">
-  <button class="lang" id="lang">عربي</button>
+  <button class="lang" id="lang">English</button>
   <h1 id="t1">Send the invitation</h1>
   <p class="sub" id="t2">Write the names of the people you want to invite, then send each one a personal message.</p>
 
@@ -40,7 +40,7 @@ textarea{resize:vertical}
   <textarea id="names" rows="6"></textarea>
 
   <label id="l2" for="link">2. Invitation link</label>
-  <input id="link" type="url" value="https://claude.ai/artifact/9tDZJWvvMXLqHJ1LsjEAcV" dir="ltr">
+  <input id="link" type="url" value="https://invitation-kappa-pied.vercel.app/" dir="ltr">
   <p class="hint" id="h2">Each person’s link opens the invitation with their name on it.</p>
 
   <label id="l3" for="msg">3. Message (you can edit it)</label>
@@ -57,7 +57,7 @@ var T={
  ar:{t1:"إرسال الدعوة",t2:"اكتب أسماء من تريد دعوتهم، ثم أرسل لكل شخص رسالة باسمه.",l1:"١. أسماء المدعوين (اسم في كل سطر)",l2:"٢. رابط الدعوة",h2:"رابط كل شخص يفتح الدعوة وعليها اسمه.",l3:"٣. نص الرسالة (يمكنك تعديله)",h3:"{name} و {link} يتم وضعهما تلقائياً.",send:"واتساب",copy:"نسخ",copied:"تم ✓",cnt:" مدعو",ph:"سارة\nمريم\nياسمين",
   msg:"عزيزي/عزيزتي {name}، يسعدنا دعوتك لحضور كتب كتاب إبراهيم ونهى يوم الجمعة ٦ نوفمبر ٢٠٢٦. تفضل/ي بزيارة دعوتك: {link}",lb:"English"}
 };
-var lang="en",$=function(i){return document.getElementById(i)},msgEdited=false;
+var lang="ar",$=function(i){return document.getElementById(i)},msgEdited=false;
 function setLang(){
  var t=T[lang];
  document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
